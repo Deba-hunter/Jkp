@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp Auto Sender</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #075e54;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      background-color: #25d366;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1ebc5e;
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📤 WhatsApp Auto Sender</h2>
+    <form action="/start" method="post" enctype="multipart/form-data">
+      <label>📞 Receiver Number (with country code):</label>
+      <input type="text" name="number" placeholder="e.g. 919876543210" required>
+
+      <label>⏱ Delay (in seconds):</label>
+      <input type="number" name="delay" value="5" min="1" required>
+
+      <label>📄 Upload Message File (.txt):</label>
+      <input type="file" name="messageFile" accept=".txt" required>
+
+      <button type="submit">🚀 Start Sending</button>
+    </form>
+  </div>
+</body>
+</html>

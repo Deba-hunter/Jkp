@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Auto Sender</title>
+</head>
+<body style="font-family: Arial; text-align: center;">
+  <h2>WhatsApp Auto Message Sender</h2>
+  <form action="/start" method="post" enctype="multipart/form-data">
+    <input type="text" name="number" placeholder="Enter WhatsApp Number" required><br><br>
+    <input type="number" name="delay" placeholder="Delay in seconds" required><br><br>
+    <input type="file" name="messageFile" accept=".txt" required><br><br>
+    <button type="submit">Start Sending</button>
+  </form>
+</body>
+</html>

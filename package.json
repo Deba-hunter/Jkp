@@ -1,15 +1,15 @@
 {
-  "name": "whatsapp-auto-sender",
-  "version": "1.0.0",
-  "description": "WhatsApp Auto Message Sender",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "@whiskeysockets/baileys": "6.6.6",
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1",
-    "qrcode-terminal": "^0.12.0"
-  }
+  "name": "whatsapp-auto-sender",
+  "version": "1.0.0",
+  "description": "WhatsApp Auto Message Sender",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.6.6",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "qrcode-terminal": "^0.12.0"
+  }
 }

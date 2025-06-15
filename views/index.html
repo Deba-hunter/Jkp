@@ -5,73 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WhatsApp Auto Sender</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 15px;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-      color: #075e54;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input[type="text"],
-    input[type="number"],
-    input[type="file"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-    button {
-      width: 100%;
-      background-color: #25d366;
-      color: white;
-      padding: 12px;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1ebc5e;
-    }
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 15px;
-      }
-    }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; margin: 0; }
+    .box { max-width: 400px; margin: 40px auto; background: #fff; padding: 20px;
+           border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color: #075e54; text-align: center; }
+    label { display: block; margin: 12px 0 4px; font-weight: bold; }
+    input, button { width: 100%; padding: 10px; margin: 6px 0; border-radius: 4px;
+                    border: 1px solid #ccc; box-sizing: border-box; }
+    button { background: #25d366; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #1ebe57; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>📤 WhatsApp Auto Sender</h2>
+  <div class="box">
+    <h2>🚀 Send WhatsApp Messages</h2>
     <form action="/start" method="post" enctype="multipart/form-data">
-      <label>📞 Receiver Number (with country code):</label>
+      <label>Receiver Number:</label>
       <input type="text" name="number" placeholder="e.g. 919876543210" required>
 
-      <label>⏱ Delay (in seconds):</label>
+      <label>Delay (seconds):</label>
       <input type="number" name="delay" value="5" min="1" required>
 
-      <label>📄 Upload Message File (.txt):</label>
+      <label>Upload Message File (.txt):</label>
       <input type="file" name="messageFile" accept=".txt" required>
 
-      <button type="submit">🚀 Start Sending</button>
+      <button type="submit">Start Sending</button>
     </form>
   </div>
 </body>
